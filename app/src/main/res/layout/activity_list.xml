@@ -8,8 +8,8 @@
 
     <CheckBox
         android:id="@+id/checkBox"
-        android:layout_width="103dp"
-        android:layout_height="52dp"
+        android:layout_width="91dp"
+        android:layout_height="49dp"
         android:text="Dogs"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,8 +20,8 @@
 
     <CheckBox
         android:id="@+id/checkBox2"
-        android:layout_width="103dp"
-        android:layout_height="53dp"
+        android:layout_width="86dp"
+        android:layout_height="52dp"
         android:text="Pirates"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,8 +50,12 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="53dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.741"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077" />
 
     <ToggleButton
         android:id="@+id/toggleButton"
@@ -67,26 +71,38 @@
 
     <RadioButton
         android:id="@+id/radioButton"
-        android:layout_width="102dp"
-        android:layout_height="44dp"
+        android:layout_width="86dp"
+        android:layout_height="52dp"
         android:text="Cats"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="189dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.281" />
 
     <RadioButton
         android:id="@+id/radioButton2"
-        android:layout_width="95dp"
-        android:layout_height="42dp"
+        android:layout_width="99dp"
+        android:layout_height="50dp"
         android:text="Ninjas"
-        tools:layout_editor_absoluteX="119dp"
-        tools:layout_editor_absoluteY="191dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28" />
 
     <Switch
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="214dp"
-        tools:layout_editor_absoluteY="288dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.613"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
 
     <TextView
         android:id="@+id/textView2"
@@ -95,26 +111,30 @@
         android:text="Toggles"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintHorizontal_bias="0.085"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.415" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/characters"
         android:layout_width="173dp"
         android:layout_height="26dp"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="352dp" />
-
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="381dp"
-        android:layout_height="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintHorizontal_bias="0.067"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.548" />
+        app:layout_constraintVertical_bias="0.499" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="329dp"
+        android:layout_height="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.561" />
 </androidx.constraintlayout.widget.ConstraintLayout>
