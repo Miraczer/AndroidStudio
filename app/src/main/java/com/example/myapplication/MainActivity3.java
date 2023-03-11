@@ -19,23 +19,23 @@ public class MainActivity3 extends AppCompatActivity implements PizzaMenuFragmen
         Log.d("DEBUG", getResources().getConfiguration().orientation + "");
 
         if (savedInstanceState == null) {
-            // Instance of first fragment
+
             PizzaMenuFragment firstFragment = new PizzaMenuFragment();
 
-            // Add Fragment to FrameLayout (flContainer), using FragmentManager
-            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();// begin  FragmentTransaction
-            ft.add(R.id.flContainer, firstFragment);                                // add    Fragment
-            ft.commit();                                                            // commit FragmentTransaction
+
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.add(R.id.flContainer, firstFragment);
+            ft.commit();
         }
 
         if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
             PizzaDetailFragment secondFragment = new PizzaDetailFragment();
             Bundle args = new Bundle();
             args.putInt("position", 0);
-            secondFragment.setArguments(args);          // (1) Communicate with Fragment using Bundle
-            FragmentTransaction ft2 = getSupportFragmentManager().beginTransaction();// begin  FragmentTransaction
-            ft2.add(R.id.flContainer2, secondFragment);                               // add    Fragment
-            ft2.commit();                                                            // commit FragmentTransaction
+            secondFragment.setArguments(args);
+            FragmentTransaction ft2 = getSupportFragmentManager().beginTransaction();
+            ft2.add(R.id.flContainer2, secondFragment);
+            ft2.commit();
         }
     }
 
@@ -48,19 +48,19 @@ public class MainActivity3 extends AppCompatActivity implements PizzaMenuFragmen
 
         Bundle args = new Bundle();
         args.putInt("position", position);
-        secondFragment.setArguments(args);          // (1) Communicate with Fragment using Bundle
+        secondFragment.setArguments(args);
 
 
         if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.flContainer2, secondFragment) // replace flContainer
+                    .replace(R.id.flContainer2, secondFragment)
                     //.addToBackStack(null)
                     .commit();
         }else{
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.flContainer, secondFragment) // replace flContainer
+                    .replace(R.id.flContainer, secondFragment)
                     .addToBackStack(null)
                     .commit();
         }
